@@ -263,6 +263,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact
 
 **Leonard** - [@leonardcl](https://github.com/leonardcl)
+**Marcell** - [@mjwsolver](https://github.com/mjwSolver)
 
 Project Link: [https://github.com/leonardcl/gemator](https://github.com/leonardcl/gemator)
 
