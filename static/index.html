@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemator - Korean Manhwa Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gemator</h1>
+            <p>Korean Manhwa Translator</p>
+        </header>
+
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/png,image/jpeg" hidden>
+            <button id="uploadBtn" class="btn btn-primary">Upload Image</button>
+        </div>
+
+        <div id="canvasContainer" class="canvas-container" style="display: none;">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div id="instructions" class="instructions" style="display: none;">
+            <h3>Instructions</h3>
+            <ul>
+                <li>Click two corners to select a speech bubble</li>
+                <li>Press <kbd>N</kbd> for normal, <kbd>S</kbd> for shout, <kbd>W</kbd> for whisper</li>
+                <li>Press <kbd>U</kbd> to undo last bubble</li>
+            </ul>
+        </div>
+
+        <div id="controls" class="controls" style="display: none;">
+            <button id="autoDetectBtn" class="btn btn-primary">🔍 Auto-Detect Bubbles</button>
+            <button id="translateBtn" class="btn btn-success">Translate</button>
+            <button id="clearBtn" class="btn btn-danger">Clear All</button>
+        </div>
+
+        <div id="status" class="status"></div>
+        <div id="progressContainer" class="progress-container" style="display: none;">
+            <div id="progressBar" class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div id="progressText" class="progress-text"></div>
+        </div>
+
+        <div id="resultSection" class="result-section" style="display: none;">
+            <h3>Translated Image</h3>
+            <img id="resultImage" alt="Translated manhwa">
+            <button id="downloadBtn" class="btn btn-primary">Download</button>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
